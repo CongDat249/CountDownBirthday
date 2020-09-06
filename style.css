@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: none;
+}
+
+body{
+    background-image: url(background.jpg);
+    background-size: cover;
+    font-family: monospace;
+}
+h3{
+    color: tomato;
+    font-weight: 900;
+    margin: 5px; 
+}
+
+.container{
+    width: 90%;
+    height: 450px;
+    background: white;
+    margin: 100px auto;
+    border-radius: 10px;
+}
+
+.getData{
+    position: relative;
+    top: 20px;
+    width: 90%;
+    margin:auto;
+    padding: 5px;
+}
+
+.getData input{
+    width: 80%;
+    border: 1px solid gray;
+    border-radius: 3px;
+    color: gray;
+    padding: 10px;
+    height: 30px;
+    margin: 5px auto;
+}
+
+.getData input:focus{
+    outline: steelblue;
+}
+
+.getData button{
+    background: linear-gradient(45deg, #1f1c44,#484750);
+    border: none;
+    padding: 10px;
+    color: white;
+    outline: none;
+    width: 80%;
+    margin: 5px auto;
+}
+.getData button:active{
+    background: gray;
+}
+
+.getData button:hover{
+    border: 1px solid tomato;
+}
+
+.output{
+    position: relative;
+    top: 15px;
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+    height: 270px;
+}
+
+.output p{
+    margin: 20px 10px 10px 5px;
+    background: white;
+    font-weight: 700;
+}
+
+@media only screen and (min-width: 768px){
+body{
+    background-image: url(background-ipad.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container{
+    width: 50%;
+    height: 450px;
+    background: teal;
+    margin: 200px auto;
+    border-radius: 10px;
+}
+}
+
+@media only screen and (min-width: 1000px){
+body{
+    background-image: url(background-ipad.jpg);
+}
+.container{
+    width: 30%;
+    height: 450px;
+    background: teal;
+    margin: 200px auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 50px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+}
+
